@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.venv.nosync
+.env
+
+# Last game, rewritten when a new game starts
+game_memory.json
+
+# Parse failures from buyer replies
+buyer_response_errors.txt

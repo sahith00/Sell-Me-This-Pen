@@ -1,0 +1,52 @@
+{
+  "phase": "pitch",
+  "seller": {
+    "name": "Seller",
+    "items": [
+      "rain jacket"
+    ],
+    "goal": "rain jacket"
+  },
+  "days": [],
+  "pending": {
+    "number": 1,
+    "item": "rain jacket",
+    "sold": false,
+    "buyer": {
+      "name": "Marisol",
+      "money": 140,
+      "profession": "elementary school art teacher",
+      "characteristics": [
+        "thrifty but generous with gifts",
+        "warm and chatty",
+        "easily distracted by color and design"
+      ],
+      "likes": [
+        "handmade ceramics",
+        "thrift store treasure hunting",
+        "supporting local artists"
+      ],
+      "dislikes": [
+        "pushy sales tactics",
+        "cheap plastic knockoffs"
+      ]
+    },
+    "exchanges": [
+      {
+        "seller_said": "hey marisol, how are you this fine evening? It's me your friend Drew! I have a new small business I'm trying to start, and I would love to sell you one of my bright, colorful locally produced rain jackets. Are you interested? It would really help me out!",
+        "buyer_said": "Hi Drew, I'm doing well, and good luck with the new business! Bright colors definitely catch my eye, but I'd want to know more first: who actually makes these jackets, and is there a local artist or designer behind them? Right now it's just a nice color and a friendly pitch.",
+        "convinced": false
+      },
+      {
+        "seller_said": "i started my business by recruiting the homeless and needy and giving them employment. all the jackets are hand stitched with love and all the materials arelocally sourced from local businesses. each jacket is dedicated to a loved one of one ofmy employees. the jacket i have picked out for you is dedicated to my employee Jose's daughter that passed away last year.",
+        "buyer_said": "Oh Drew, that's a moving story, and I'm so sorry about Jose's daughter. Hand stitching and local materials sound lovely, but I'm still not hearing who designs these, so tell me about the person behind the colors and patterns. I'd also rather decide on the jacket itself than on a heartbreaking story, because that starts to feel a little like pressure.",
+        "convinced": false
+      },
+      {
+        "seller_said": "not trying to pressure you at all! the jackets are designed by a local mom and shop designer shop. the desiging business is owned by a mom and her son. the son went to design school and has been designing jackets his whole life. the mother helps pitch innovative designes inspired from her own culture. together they make a fantastic team and im hoping we can help each other out for the future",
+        "buyer_said": "I need that again before I can answer. (buyer reply did not contain a JSON object)",
+        "convinced": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopkeeper</title>
+    <link rel="preload" href="/static/fonts/PressStart2P-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="stage">
+        <div class="topbar">
+          <button type="button" id="title-button" class="secondary small away">&lt; TITLE</button>
+        </div>
+
+        <canvas id="screen" width="768" height="720" role="img" aria-label="Pixel-art shop scene"></canvas>
+
+        <div class="panel controls">
+          <p id="status" class="status" aria-live="polite"></p>
+
+          <form id="pitch-form" hidden>
+            <label for="pitch" class="label">YOUR PITCH</label>
+            <textarea id="pitch" rows="4" placeholder="Tell the buyer why they need it..."></textarea>
+            <div class="row">
+              <span id="word-count" class="counter">0/300 WORDS</span>
+              <span class="spacer"></span>
+              <button type="button" id="pass-button" class="secondary">PASS</button>
+              <button type="submit" id="say-button">SAY IT</button>
+            </div>
+            <p class="hint">ENTER TO SAY IT. SHIFT+ENTER FOR A NEW LINE.</p>
+          </form>
+
+          <div id="choices" class="row" hidden></div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="panel">
+          <h2>BUYER</h2>
+          <dl id="buyer-details" class="details"></dl>
+        </section>
+
+        <section class="panel">
+          <h2>TODAY'S TALK</h2>
+          <ol id="log" class="log"></ol>
+        </section>
+
+        <button type="button" id="sound-toggle" class="secondary small">SOUND: ON</button>
+      </aside>
+    </main>
+
+    <script type="module" src="/static/game.js"></script>
+  </body>
+</html>
